@@ -28,9 +28,29 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+#Provides a better error page for Rails and other Rack apps. 
+gem 'better_errors', '~> 2.7', '>= 2.7.1'
+
+# Guard is a command line tool to easily handle events on file system modifications.
+gem 'guard', '~> 2.16', '>= 2.16.2'
+
+#A modern CSS framework based on Flexbox
+gem 'bulma-rails', '~> 0.9.0'
+
+#Forms made easy!
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
+
+#A configurable and documented Rails view helper for adding gravatars into your Rails application.
+gem 'gravatar_image_tag', '~> 1.2'
+
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.7', '>= 4.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  #automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :development do
